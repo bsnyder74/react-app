@@ -58,7 +58,7 @@ jobs:
         run: npx surge --project ./build --domain cruel-top.surge.sh
       - name: Deploy to Production
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: npx surge --project ./build --domain long-tendency.surge.sh
+        run: npx surge --project ./build --domain dapper-alarm.surge.sh
       - name: Upload Coverage Report
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: npx codecov
