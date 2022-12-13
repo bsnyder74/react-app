@@ -12,7 +12,6 @@ jobs:
           body: Body
           assignees: |
             bsnyder74
-            whoever
       - run: echo ${{ steps.issue.outputs.issue }}
       - uses: ./.github/actions/hello
         id: hello
