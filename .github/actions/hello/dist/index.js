@@ -1194,7 +1194,13 @@ module.exports = /******/ (function (modules, runtime) {
 
       try {
         // throw( new Error("some error message"));
+
+        core.debug("Debug message");
+        core.warning("Warning message");
+        core.error("Error message");
+
         const name = core.getInput("who-to-greet");
+        core.setSecret(name); // This function masks the output of any secret values in the logs
         console.log(`Hello ${name}`);
 
         const time = new Date();
