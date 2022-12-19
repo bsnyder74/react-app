@@ -11,8 +11,7 @@ outputs:
     description: "The greeting time"
 runs:
   using: "docker"
-  iamge: "Dockerfile"
+  image: "Dockerfile"
   # entrypoint:
   args:
     - ${{ inputs.who-to-greet }}
-
