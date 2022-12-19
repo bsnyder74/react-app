@@ -15,4 +15,4 @@ echo 'some stuff'
 echo 'some stuff'
 echo "::endgroup::"
 
-echo '::set-env nam=HELLO::hello'
+echo "HELLO=hello" >> $GITHUB_ENV
